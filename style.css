@@ -36,7 +36,7 @@ footer p{
     font-weight: 600; 
     position: fixed;
     margin-left: -140px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family:'Courier New', Courier, monospace;
     color: #f0bc42;
     top: 3%;
 }
