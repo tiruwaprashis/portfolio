@@ -926,27 +926,8 @@ margin-right: -10px;
 flex-direction: column;
 transition: all .45s ease;
 }
-#ppPic{
-    height: 130%;
-    width: 130%;
-    margin-top: -110px;
-    margin-left: -60px;
-}
-.about .about-content .right .text{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px; 
-    width: 150%;
-}
-.about .about-content .right p{
-    width: 140%;
-}
-.about .about-content .right a{
-    font-size: 15px;
-    font-weight: 500;
-    padding: 5px 15px;
-   
-}
+
+
 .menu.open *{
     top: 100%;
 }
@@ -988,4 +969,146 @@ transition: all .45s ease;
 .teams .title::after{
     font-size: 14px;
 }
+}
+/* Responsive adjustments for "My Services" section */
+@media (max-width: 767px) {
+    .services .serv-content .card {
+        width: 100% !important; /* Make cards full width on small screens */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+    }
+
+    .services .serv-content .card .text {
+        font-size: 20px; /* Reduce font size for better fit */
+    }
+
+    .services .serv-content .card i {
+        font-size: 40px; /* Reduce icon size */
+    }
+
+    .services .serv-content .card p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+
+    .services .title::after {
+        font-size: 16px; /* Adjust title font size */
+    }
+}
+/* Responsive adjustments for "Contact Me" section */
+@media (max-width: 767px) {
+    .contact .contact-content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .contact .contact-content .column {
+        width: 100% !important; /* Make columns full width */
+    }
+
+    .contact .contact-content .left {
+        margin-bottom: 30px; /* Add spacing between stacked columns */
+    }
+
+    .contact .contact-content .right form .fields {
+        flex-direction: column; /* Stack form fields vertically */
+    }
+
+    .contact .contact-content .right form .field,
+    .contact .contact-content .right form .textarea {
+        width: 100%; /* Make form inputs full width */
+    }
+
+    .contact .contact-content .right form .button-area button {
+        width: 100% !important; /* Make button full width */
+    }
+
+    .contact .contact-content .row i {
+        font-size: 20px; /* Reduce icon size */
+    }
+
+    .contact .contact-content .info .head {
+        font-size: 16px; /* Reduce heading font size */
+    }
+
+    .contact .contact-content .info .sub-title {
+        font-size: 14px; /* Reduce sub-title font size */
+    }
+
+    .contact .title::after {
+        font-size: 16px; /* Adjust title font size */
+    }
+}
+/* Responsive styling for 'My Skills' section */
+@media screen and (max-width: 992px) {
+    .skills .skills-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills .skills-content .right .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills .skills-content .right span {
+        font-size: 16px;
+    }
+    .skills .skills-content .right .line {
+        height: 4px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills .title {
+        font-size: 30px;
+    }
+    .skills .skills-content .left .text {
+        font-size: 18px;
+    }
+    .skills .skills-content .right .info {
+        font-size: 14px;
+    }
+}
+/* Responsive About Me Section */
+@media (max-width: 1024px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+    }
+    .about .about-content .right .text {
+        margin-top: 10%;
+    }
+    .about .about-content .left img {
+        height: auto;
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about-content .right .text {
+        font-size: 22px;
+    }
+    .about .about-content .right p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .about-content .right .text {
+        font-size: 18px;
+    }
+    .about .about-content .right a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
